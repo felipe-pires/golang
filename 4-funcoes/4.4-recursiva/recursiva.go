@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(fibo(10))
+
+	posicao := 10
+	for i := 1; i < posicao; i++ {
+		fmt.Println(fibo(i))
+	}
+
 }
 
 func fibo(posicao int) int {
