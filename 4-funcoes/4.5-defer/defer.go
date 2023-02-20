@@ -17,7 +17,7 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 
-	//adiar a execucao da funcao ate o ultimo momento possivel
+	//adiar a execucao da funcao ate o ultimo momento possivel Ex: antes do retorno de uma funcao
 	defer funcao1()
 	funcao2()
 }
