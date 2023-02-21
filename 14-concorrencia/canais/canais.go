@@ -10,11 +10,15 @@ func main() {
 
 	go escrever("go routine 1", canal)
 
-	for {
-		msg, aberto := <-canal
-		if !aberto {
-			break
-		}
+	// for {
+	// 	msg, aberto := <-canal
+	// 	if !aberto {
+	// 		break
+	// 	}
+	// 	fmt.Println(msg)
+	// }
+
+	for msg := range canal {
 		fmt.Println(msg)
 	}
 }
