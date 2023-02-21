@@ -16,7 +16,7 @@ func test_panic(n1, n2 float64) bool {
 	} else if media < 5 {
 		return false
 	}
-	panic("media 6")
+	panic("excecao")
 }
 
 func test_recover() {
