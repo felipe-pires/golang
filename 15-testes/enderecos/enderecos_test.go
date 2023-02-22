@@ -8,6 +8,7 @@ type cenario struct {
 }
 
 func TestTipoDeEndereco(t *testing.T) {
+	// t.Parallel() executar testes em paralelo
 
 	cenarioDeTeste := []cenario{
 		{"Rua teste", "Rua"},
